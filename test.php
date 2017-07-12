@@ -10,9 +10,9 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-$ism = $_GET['id']
+$ism = $_GET['id'];
 
-echo "welcome to azure ".$id."";
+echo "welcome to azure ".$ism."";
 
 
 ?>
