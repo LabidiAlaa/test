@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "users";
+$servername = "iris-tech-azure-app-mysqldbserver.mysql.database.azure.com";
+$username = "mysqldbuser@iris-tech-azure-app-mysqldbserver";
+$password = "dev@tech2";
+$dbname = "mysqldatabase49658";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
