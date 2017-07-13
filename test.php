@@ -14,7 +14,7 @@ if (!$conn) {
 $ruche_id = $_GET['ruche_id'];
 
 
-$sql = "INSERT INTO data (ruche_id) values ('$ruche_id')";
+$sql = "INSERT INTO data_test (ruche_id) values ('$ruche_id')";
 
 
 
