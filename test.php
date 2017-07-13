@@ -9,17 +9,12 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 // Check connection
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
+    echo "connection failed";
 }
 $ruche_id = $_GET['ruche_id'];
-$temperature1 = $_GET['temperature1'];
-$temperature2 = $_GET['temperature2'];
-$humidite1 = $_GET['humidite1'];
-$count = $_GET['count'];
-$cap_bat = $_GET['cap_bat'];
-$lati = $_GET['lati'];
-$longi = $_GET['longi'];
 
-$sql = "INSERT INTO data(ruche_id) values ('$ruche_id')";
+
+$sql = "INSERT INTO data (ruche_id) values ('$ruche_id')";
 
 
 
