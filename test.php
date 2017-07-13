@@ -19,12 +19,12 @@ $cap_bat = $_GET['cap_bat'];
 $lati = $_GET['lati'];
 $longi = $_GET['longi'];
 
-$sql = "INSERT INTO data(ruche_id, temperature1, temperature2, humidite1, count, cap_bat, lati, longi) values ('$ruche_id', '$temperature1', '$temperature2', '$humidite1', '$count', '$cap_bat', '$lati', '$longi')";
+$sql = "INSERT INTO data(ruche_id) values ('$ruche_id')";
 
 
 
 
-echo "welcome to azure, data successfully stored";
+echo "welcome to azure, ".$ruche_id."";
 
 
 ?>
