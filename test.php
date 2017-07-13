@@ -14,7 +14,24 @@ if (!$conn) {
 $ruche_id = $_GET['ruche_id'];
 
 
-$sql = "INSERT INTO data_test (ruche_id) values ('$ruche_id')";
+$sql = "INSERT INTO `mysqldatabase49658`.`data`
+(`ruche_id`,
+`temperature1`,
+`temperature2`,
+`humidite1`,
+`count`,
+`cap_bat`,
+`lati`,
+`longi`)
+VALUES
+(<{ruche_id: }>,
+<{temperature1: 0}>,
+<{temperature2: 0}>,
+<{humidite1: 0}>,
+<{count: 0}>,
+<{cap_bat: 0}>,
+<{lati: 0}>,
+<{longi: 0}>);";
 
 
 
