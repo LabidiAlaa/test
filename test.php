@@ -24,11 +24,11 @@ if ('1'=='1'){
 	
 	
 		
-	$sql = "INSERT INTO data( ruche_id, temperature1, temperature2, humidite1, count, cap_bat, lati, longi ) values ('$id_ruche', 0, 0, 0, 0, 0, 0, 0)";
+	$sql = "INSERT INTO data( ruche_id, temperature1, temperature2, humidite1, count, cap_bat, lati, longi ) values ('$id_ruche', '$temperature1', '$temperature2', '$humidite', '$count', '$cap_bat', '$lati', '$longi')";
 	//$req = $bdd->prepare($sql);
 	//$req->execute();
 	
-	echo $sql;
+	echo 'Success';
 	
 	$query = $bdd->prepare( $sql );
 	if ($query == false) {
